@@ -1,0 +1,146 @@
+body{
+  line-height: 1;
+}
+
+.hidden{
+  display: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+main form:last-of-type input {
+  width: calc(100% - 3vw);
+  margin-top: 10px;
+  color: inherit;
+  font-size: min(48px, 5vw);
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid floralwhite;
+}
+#weather {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+}
+#weather li:first-child {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+#weather li:last-child {
+  margin-top: -10px;
+}
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 60vh;
+}
+main #clock {
+  text-align: center;
+  font-size: min(50px, 15vw);
+}
+main #greeting {
+  font-size: min(48px, 5vw);
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main form #login-input {
+  width: calc(100% - 3vw);
+  margin-top: 10px;
+  color: inherit;
+  font-size: min(42px, 4vw);
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid floralwhite;
+}
+
+main form:last-of-type {
+  margin-top: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main form:last-of-type input {
+  width: 160%;
+  font-size: min(38px, 3.5vw);
+  font-weight: unset;
+}
+main #todo-list {
+  width: 100%;
+  margin-top: 30px;
+  max-width: min(525px, 50vw);
+  overflow-y: scroll;
+}
+#todo-list::-webkit-scrollbar {
+  display: none;
+}
+
+img{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
+
+ol, ul {
+  list-style : none;
+}
+
+#quote {
+  width: 80%;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  color: red;
+}
+
+#todo-list li{
+
+  /* grid-template-columns: 9fr 1fr; */
+  align-items: center;
+  max-width: 100%;
+  padding: 5px;
+  font-size: min(30px);
+  word-break: break-all;
+  cursor: pointer;
+}
+
+#todo-list li span {
+  align-self: center;
+}
+
+#todo-list li button {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;;
+}
